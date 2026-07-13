@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kanha89948.github.io/donghua-zone-24/sitemap.xml
