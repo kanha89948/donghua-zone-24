@@ -4,57 +4,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donghua Zone 24</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
 body{
-margin:0;
-background:#0d0d0d;
-color:white;
-font-family:Arial,sans-serif;
-text-align:center;
+background:#0b0b0b;
+color:#fff;
 }
+
 header{
-background:#c40000;
-padding:20px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:1000;
 }
-h1{
-margin:0;
-font-size:40px;
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ff2d2d;
 }
-.hero{
-padding:60px 20px;
-}
-button{
-padding:15px 30px;
-font-size:18px;
-background:#ff0000;
+
+nav a{
 color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
 }
-footer{
-margin-top:50px;
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 padding:20px;
-background:#111;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:55px;
+color:gold;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#ff2d2d;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:gold;
+color:black;
 }
 </style>
+
 </head>
 <body>
 
 <header>
-<h1>🐉 Donghua Zone 24</h1>
-<p>Your Ultimate Destination for Chinese Donghua</p>
+<div class="logo">🐉 Donghua Zone 24</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Series</a>
+<a href="#">Updates</a>
+<a href="#">Contact</a>
+</nav>
 </header>
 
-<div class="hero">
-<h2>Welcome!</h2>
-<p>Latest Donghua News, Episode Updates, Reviews & Trailers.</p>
-<button>Explore Now</button>
-</div>
+<section class="hero">
 
-<footer>
-© 2026 Donghua Zone 24. All Rights Reserved.
-</footer>
+<h1>Welcome To Donghua Zone 24</h1>
+
+<p>
+Latest Chinese Donghua Updates, Episode Guides, Trailers,
+News & Original Content.
+</p>
+
+<a class="btn" href="https://youtube.com/@donghuazone24-x?si=aGmlblVFv2XrDwum">
+Subscribe YouTube
+</a>
+
+</section>
 
 </body>
 </html>
